@@ -1,9 +1,11 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Graph implements GraphInterface {
+public class Graph extends UnicastRemoteObject implements GraphInterface {
     private ArrayList <HashSet <Integer>> graph;
     private  String graphEnd = "S";
     private HashMap <Integer , Integer> nodeMap;
@@ -23,7 +25,7 @@ public class Graph implements GraphInterface {
         return index;
     }
 
-    private void readFromFile() throws FileNotFoundException {
+    private void readFromFile() throws FileNotFoundException, RemoteException {
         File file = new File("graph");
         Scanner sc = new Scanner(file);
         while (sc.hasNextLine()){
@@ -36,7 +38,7 @@ public class Graph implements GraphInterface {
             }
         }
     }
-    private void readFromStandardInput(){
+    private void readFromStandardInput() throws RemoteException {
         Scanner sc = new Scanner(System.in);
         String line;
         while(!(line = sc.nextLine()).equals(graphEnd)){
@@ -46,7 +48,8 @@ public class Graph implements GraphInterface {
             add(from,to);
         }
     }
-    public Graph(Boolean isFile) throws FileNotFoundException {
+    public Graph(Boolean isFile) throws FileNotFoundException, RemoteException {
+        super();
         lock = new ReentrantLock();
         nodeMap = new HashMap <>();
         graph = new ArrayList<>();
@@ -87,7 +90,7 @@ public class Graph implements GraphInterface {
     }
 
     @Override
-    public int query(int from, int to) {
+    public int query(int from, int to) throws RemoteException {
         if(!nodeMap.containsKey(from) || !nodeMap.containsKey(to)){
             return 0;
         }
@@ -95,7 +98,7 @@ public class Graph implements GraphInterface {
     }
 
     @Override
-    public void delete(int from, int to) {
+    public void delete(int from, int to) throws RemoteException {
         lock.lock();
         if(nodeMap.containsKey(from) && nodeMap.containsKey(to)){
             int idx = nodeMap.get(from);
@@ -105,7 +108,7 @@ public class Graph implements GraphInterface {
     }
 
     @Override
-    public void add(int from, int to) {
+    public void add(int from, int to) throws RemoteException {
         lock.lock();
         int idx_from = getIndex(from);
         getIndex(to);
