@@ -11,7 +11,7 @@ public class Graph implements GraphInterface {
 
     private int  getIndex(int node){
         if(nodeMap.containsKey(node)){
-            nodeMap.get(node);
+           return nodeMap.get(node);
         }
         return createIndex(node);
     }
@@ -24,24 +24,34 @@ public class Graph implements GraphInterface {
     }
 
     private void readFromFile() throws FileNotFoundException {
-        File file =
-                new File("graph");
+        File file = new File("graph");
         Scanner sc = new Scanner(file);
         while (sc.hasNextLine()){
             String line = sc.nextLine();
             if(!line.equals(graphEnd)){
                 Scanner lineSC = new Scanner(line);
-                int from = getIndex(lineSC.nextInt());
-                int to = getIndex(lineSC.nextInt());
-                graph.get(from).add(to);
+                int from = lineSC.nextInt();
+                int to = lineSC.nextInt();
+                add(from,to);
             }
         }
     }
     private void readFromStandardInput(){
-
+        Scanner sc = new Scanner(System.in);
+        String line;
+        while(!(line = sc.nextLine()).equals(graphEnd)){
+            Scanner scLine = new Scanner(line);
+            int from = scLine.nextInt();
+            int to = scLine.nextInt();
+            add(from,to);
+        }
     }
     public Graph() throws FileNotFoundException {
-        readFromFile();
+        nodeMap = new HashMap <>();
+        graph = new ArrayList<>();
+        readFromStandardInput();
+        System.out.println(graph);
+        System.out.println("R\n");
     }
     @Override
     public int query(int from, int to) {
