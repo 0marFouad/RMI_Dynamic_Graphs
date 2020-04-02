@@ -12,6 +12,7 @@ public class Graph implements GraphInterface {
     private int  getIndex(int node){
         if(nodeMap.containsKey(node)){
            return nodeMap.get(node);
+
         }
         return createIndex(node);
     }
