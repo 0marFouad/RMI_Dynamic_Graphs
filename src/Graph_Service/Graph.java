@@ -1,3 +1,4 @@
+package Graph_Service;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.rmi.RemoteException;
@@ -25,8 +26,8 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
         return index;
     }
 
-    private void readFromFile() throws FileNotFoundException, RemoteException {
-        File file = new File("graph");
+    private void readFromFile(String filename) throws FileNotFoundException {
+        File file = new File(filename);
         Scanner sc = new Scanner(file);
         while (sc.hasNextLine()){
             String line = sc.nextLine();
@@ -54,10 +55,20 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
         nodeMap = new HashMap <>();
         graph = new ArrayList<>();
         if(isFile){
-            readFromFile();
+            readFromFile("graph");
         }else{
             readFromStandardInput();
         }
+        System.out.println(graph);
+        System.out.println("R\n");
+    }
+
+    public Graph(String filename) throws FileNotFoundException, RemoteException {
+        super();
+        lock = new ReentrantLock();
+        nodeMap = new HashMap <>();
+        graph = new ArrayList<>();
+        readFromFile(filename);
         System.out.println(graph);
         System.out.println("R\n");
     }
@@ -90,7 +101,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
     }
 
     @Override
-    public int query(int from, int to) throws RemoteException {
+    public int query(int from, int to) {
         if(!nodeMap.containsKey(from) || !nodeMap.containsKey(to)){
             return 0;
         }
@@ -98,7 +109,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
     }
 
     @Override
-    public void delete(int from, int to) throws RemoteException {
+    public void delete(int from, int to) {
         lock.lock();
         if(nodeMap.containsKey(from) && nodeMap.containsKey(to)){
             int idx = nodeMap.get(from);
@@ -108,7 +119,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
     }
 
     @Override
-    public void add(int from, int to) throws RemoteException {
+    public void add(int from, int to) {
         lock.lock();
         int idx_from = getIndex(from);
         getIndex(to);
