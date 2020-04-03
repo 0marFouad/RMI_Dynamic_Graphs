@@ -4,12 +4,15 @@ import java.io.FileNotFoundException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Graph extends UnicastRemoteObject implements GraphInterface {
-    private ArrayList <HashSet <Integer>> graph;
+    private CopyOnWriteArrayList<CopyOnWriteArraySet<Integer>> graph;
     private  String graphEnd = "S";
-    private HashMap <Integer , Integer> nodeMap;
+    private ConcurrentHashMap <Integer , Integer> nodeMap;
     private static ReentrantLock lock;
 
     private int  getIndex(int node){
@@ -21,7 +24,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
 
     private int createIndex(int node){
         int index = graph.size();
-        graph.add(new HashSet<>());
+        graph.add(new CopyOnWriteArraySet<>());
         nodeMap.put(node , index);
         return index;
     }
@@ -39,7 +42,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
             }
         }
     }
-    private void readFromStandardInput() throws RemoteException {
+    private void readFromStandardInput() {
         Scanner sc = new Scanner(System.in);
         String line;
         while(!(line = sc.nextLine()).equals(graphEnd)){
@@ -52,8 +55,8 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
     public Graph(Boolean isFile) throws FileNotFoundException, RemoteException {
         super();
         lock = new ReentrantLock();
-        nodeMap = new HashMap <>();
-        graph = new ArrayList<>();
+        nodeMap = new ConcurrentHashMap <>();
+        graph = new CopyOnWriteArrayList<>();
         if(isFile){
             readFromFile("graph");
         }else{
@@ -66,8 +69,8 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
     public Graph(String filename) throws FileNotFoundException, RemoteException {
         super();
         lock = new ReentrantLock();
-        nodeMap = new HashMap <>();
-        graph = new ArrayList<>();
+        nodeMap = new ConcurrentHashMap <>();
+        graph = new CopyOnWriteArrayList<>();
         readFromFile(filename);
         System.out.println(graph);
         System.out.println("R\n");
