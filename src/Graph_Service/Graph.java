@@ -68,7 +68,6 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
 
     public Graph(String filename) throws FileNotFoundException, RemoteException {
         super();
-        lock = new ReentrantLock();
         nodeMap = new ConcurrentHashMap <>();
         graph = new CopyOnWriteArrayList<>();
         readFromFile(filename);
@@ -113,20 +112,16 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
 
     @Override
     public void delete(int from, int to) {
-        lock.lock();
         if(nodeMap.containsKey(from) && nodeMap.containsKey(to)){
             int idx = nodeMap.get(from);
             graph.get(idx).remove(to);
         }
-        lock.unlock();
     }
 
     @Override
     public void add(int from, int to) {
-        lock.lock();
         int idx_from = getIndex(from);
         getIndex(to);
         graph.get(idx_from).add(to);
-        lock.unlock();
     }
 }

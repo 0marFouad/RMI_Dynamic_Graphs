@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05eb3a7d-a69c-45c0-ad0f-e61d21b6c2fb" name="Default Changelist" comment="Refactored &amp; Unit Testing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMI_Dynamic_Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMI_Dynamic_Graphs/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graph_Service/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph_Service/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +28,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="-210">
               <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SingleThreadedGraph">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RMI_Dynamic_Graphs" />
@@ -256,8 +253,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SingleThreadedGraph" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SingleThreadedGraph" />
         <item itemvalue="JUnit.SingleThreadedGraph.Test_Hard_Graph2" />
         <item itemvalue="JUnit.SingleThreadedGraph.Test_Hard_Graph" />
         <item itemvalue="JUnit.SingleThreadedGraph.Test_Delete_Edge2" />
@@ -286,9 +283,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingleThreadedGraph_Test_Delete_Edge2 - 2020.04.02 at 11h 48m 46s.xml">
-      <configuration name="SingleThreadedGraph.Test_Delete_Edge2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SingleThreadedGraph - 2020.04.02 at 11h 48m 54s.xml">
       <configuration name="SingleThreadedGraph" configurationId="JUnit" />
     </history-entry>
@@ -316,12 +310,15 @@
     <history-entry file="SingleThreadedGraph - 2020.04.02 at 12h 16m 56s.xml">
       <configuration name="SingleThreadedGraph" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SingleThreadedGraph - 2020.04.03 at 08h 28m 19s.xml">
+      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,7 +332,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24854143" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24854143" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.25087515" />
@@ -410,20 +407,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph.java">
+    <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        <state relative-caret-position="-210">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
