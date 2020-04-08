@@ -186,7 +186,13 @@ public class Graph_BellmanFord extends UnicastRemoteObject implements GraphInter
                     list_from.put(entry.getKey(), Math.min(entry.getValue() + 1, list_from.get(entry.getKey())));
                 }
             }
-            parents.get(to).add(from);
+            if(parents.get(to) != null){
+                parents.get(to).add(from);
+            }else{
+                CopyOnWriteArraySet<Integer> x = new CopyOnWriteArraySet<>();
+                x.add(from);
+                parents.put(to,x);
+            }
             list_from.put(to,0);
             graph.put(from,list_from);
         }else if(!list_of_nodes.contains(to)){
