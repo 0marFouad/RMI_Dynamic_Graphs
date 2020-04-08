@@ -212,6 +212,7 @@ public class Graph_BellmanFord extends UnicastRemoteObject implements GraphInter
             }
         }else{
             if(graph.get(from).get(to) == 1){
+                lock.unlock();
                 return;
             }else{
                 graph.get(from).put(to,1);
