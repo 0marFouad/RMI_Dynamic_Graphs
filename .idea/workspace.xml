@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05eb3a7d-a69c-45c0-ad0f-e61d21b6c2fb" name="Default Changelist" comment="Refactored &amp; Unit Testing">
-      <change beforePath="$PROJECT_DIR$/src/Graph_Service/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph_Service/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graph_Service/Graph_BellmanFord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Testing/graph_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMI_Dynamic_Graphs/Graph_Service/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMI_Dynamic_Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMI_Dynamic_Graphs/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMI_Dynamic_Graphs/Testing/SingleThreadedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph_Service/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph_Service/Graph_BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/SingleThreadedGraphBFS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            <state relative-caret-position="252">
+              <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,10 +39,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java">
+        <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="286">
+              <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +50,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph_BFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+            <state relative-caret-position="-1776">
+              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph_BellmanFord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="225" column="34" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/CopyOnWriteArrayList.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="1357" selection-start-line="1357" selection-end-line="1357" />
+              <folding>
+                <element signature="e#41285#41286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Testing/graph_test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="109" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Testing/graph_complex.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="126">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -71,18 +126,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph_Service/GraphInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="147">
               <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,8 +159,13 @@
         <option value="$PROJECT_DIR$/src/Testing/graph_complex.txt" />
         <option value="$PROJECT_DIR$/src/Graph_Service/GraphInterface.java" />
         <option value="$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Graph_Service/Graph.java" />
+        <option value="$PROJECT_DIR$/src/Graph_Service/Graph_BFS.java" />
+        <option value="$PROJECT_DIR$/src/Testing/graph_test.txt" />
+        <option value="$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java" />
+        <option value="$PROJECT_DIR$/src/Graph_Service/Graph_BellmanFord.java" />
+        <option value="$PROJECT_DIR$/src/Testing/SingleThreadedGraphBFS.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -129,8 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,6 +208,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,7 +239,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleThreadedGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingleThreadedGraphBFS.Test_Custom_Graph1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RMI_Dynamic_Graphs" />
       <extension name="coverage">
         <pattern>
@@ -197,13 +248,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraph" />
+      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraphBFS" />
+      <option name="METHOD_NAME" value="Test_Custom_Graph1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleThreadedGraphBellmanFord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMI_Dynamic_Graphs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Testing" />
+      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraphBellmanFord" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleThreadedGraph.Test_Delete_Edge2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RMI_Dynamic_Graphs" />
       <extension name="coverage">
         <pattern>
@@ -212,14 +279,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraph" />
-      <option name="METHOD_NAME" value="Test_Delete_Edge2" />
+      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraphBellmanFord" />
+      <option name="METHOD_NAME" value="Test_Custom_Graph1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleThreadedGraph.Test_Hard_Graph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingleThreadedGraphBellmanFord.Test_Hard_Graph3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RMI_Dynamic_Graphs" />
       <extension name="coverage">
         <pattern>
@@ -228,24 +295,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraph" />
-      <option name="METHOD_NAME" value="Test_Hard_Graph" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleThreadedGraph.Test_Hard_Graph2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RMI_Dynamic_Graphs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraph" />
-      <option name="METHOD_NAME" value="Test_Hard_Graph2" />
+      <option name="MAIN_CLASS_NAME" value="Testing.SingleThreadedGraphBellmanFord" />
+      <option name="METHOD_NAME" value="Test_Hard_Graph3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,10 +305,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SingleThreadedGraph" />
-        <item itemvalue="JUnit.SingleThreadedGraph.Test_Hard_Graph2" />
-        <item itemvalue="JUnit.SingleThreadedGraph.Test_Hard_Graph" />
-        <item itemvalue="JUnit.SingleThreadedGraph.Test_Delete_Edge2" />
+        <item itemvalue="JUnit.SingleThreadedGraphBFS.Test_Custom_Graph1" />
+        <item itemvalue="JUnit.SingleThreadedGraphBellmanFord" />
+        <item itemvalue="JUnit.SingleThreadedGraphBellmanFord.Test_Custom_Graph1" />
+        <item itemvalue="JUnit.SingleThreadedGraphBellmanFord.Test_Hard_Graph3" />
       </list>
     </recent_temporary>
   </component>
@@ -283,42 +334,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SingleThreadedGraph - 2020.04.02 at 11h 48m 54s.xml">
-      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 01h 57m 45s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph_Test_Hard_Graph - 2020.04.02 at 11h 53m 32s.xml">
-      <configuration name="SingleThreadedGraph.Test_Hard_Graph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 01h 57m 59s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph_Test_Hard_Graph - 2020.04.02 at 11h 53m 48s.xml">
-      <configuration name="SingleThreadedGraph.Test_Hard_Graph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 01h 58m 18s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph_Test_Hard_Graph2 - 2020.04.02 at 11h 54m 38s.xml">
-      <configuration name="SingleThreadedGraph.Test_Hard_Graph2" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 01h 59m 00s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph_Test_Hard_Graph2 - 2020.04.02 at 11h 54m 53s.xml">
-      <configuration name="SingleThreadedGraph.Test_Hard_Graph2" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 01h 59m 52s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph - 2020.04.02 at 12h 04m 54s.xml">
-      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 02h 00m 48s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph - 2020.04.02 at 12h 09m 25s.xml">
-      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord_Test_Custom_Graph1 - 2020.04.08 at 02h 00m 56s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph - 2020.04.02 at 12h 16m 02s.xml">
-      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBellmanFord - 2020.04.08 at 02h 01m 03s.xml">
+      <configuration name="SingleThreadedGraphBellmanFord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph - 2020.04.02 at 12h 16m 56s.xml">
-      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBFS_Test_Custom_Graph1 - 2020.04.08 at 02h 01m 30s.xml">
+      <configuration name="SingleThreadedGraphBFS.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SingleThreadedGraph - 2020.04.03 at 08h 28m 19s.xml">
-      <configuration name="SingleThreadedGraph" configurationId="JUnit" />
+    <history-entry file="SingleThreadedGraphBFS_Test_Custom_Graph1 - 2020.04.08 at 02h 02m 06s.xml">
+      <configuration name="SingleThreadedGraphBFS.Test_Custom_Graph1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26627535" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -327,12 +378,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29288214" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990665" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2882147" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3150525" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24854143" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24854143" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.25087515" />
@@ -356,9 +407,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>9</line>
+          <line>10</line>
           <properties />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -366,10 +441,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Graph.java" />
     <entry file="file://$PROJECT_DIR$/src/GraphInterface.java" />
-    <entry file="file://$PROJECT_DIR$/src/Testing/graph_complex.txt">
+    <entry file="file://$PROJECT_DIR$/graph">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="84">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph_Service/GraphInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -380,17 +465,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph">
+    <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph_BFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="-1776">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph_Service/GraphInterface.java">
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.13.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="294">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/ConcurrentHashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="4173" selection-start-line="4173" selection-end-line="4173" />
+          <folding>
+            <element signature="e#174249#174250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/graph_complex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/CopyOnWriteArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="1357" selection-start-line="1357" selection-end-line="1357" />
+          <folding>
+            <element signature="e#41285#41286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/graph_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph_BellmanFord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="225" column="34" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBellmanFord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="109" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraphBFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -399,28 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing/SingleThreadedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph_Service/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        <state relative-caret-position="252">
+          <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

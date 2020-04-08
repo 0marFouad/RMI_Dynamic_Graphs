@@ -9,7 +9,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Graph extends UnicastRemoteObject implements GraphInterface {
+public class Graph_BFS extends UnicastRemoteObject implements GraphInterface {
     private CopyOnWriteArrayList<CopyOnWriteArraySet<Integer>> graph;
     private  String graphEnd = "S";
     private ConcurrentHashMap <Integer , Integer> nodeMap;
@@ -52,7 +52,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
             add(from,to);
         }
     }
-    public Graph(Boolean isFile) throws FileNotFoundException, RemoteException {
+    public Graph_BFS(Boolean isFile) throws FileNotFoundException, RemoteException {
         super();
         lock = new ReentrantLock();
         nodeMap = new ConcurrentHashMap <>();
@@ -66,7 +66,7 @@ public class Graph extends UnicastRemoteObject implements GraphInterface {
         System.out.println("R\n");
     }
 
-    public Graph(String filename) throws FileNotFoundException, RemoteException {
+    public Graph_BFS(String filename) throws FileNotFoundException, RemoteException {
         super();
         nodeMap = new ConcurrentHashMap <>();
         graph = new CopyOnWriteArrayList<>();
